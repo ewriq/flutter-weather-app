@@ -13,8 +13,8 @@ class HomeScreen extends StatefulWidget {
 
 class _HomeScreenState extends State<HomeScreen> {
   Future<Weather> fetchWeather() async {
-    final apiKey = 'ffe4bb281c7eed20214ca5fbf24f93bb'; // API anahtarınızı buraya ekleyin
-    final city = 'Gaziantep';
+    final apiKey = ''; // API anahtarınızı buraya ekleyin
+    final city = '';
     final country = 'TR';
 
     final resp = await http.get(Uri.parse("http://api.openweathermap.org/data/2.5/weather?q=$city,$country&appid=$apiKey"));
